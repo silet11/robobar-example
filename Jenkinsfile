@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Clean') {
+        stage('Build') {
             steps {
-                sh './cy:run'
+                sh 'yarn run cy:run'
             }
         }
     }
