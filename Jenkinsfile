@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh 'cy:run'
+                sh './cy:run'
             }
         }
     }
