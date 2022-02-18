@@ -31,7 +31,7 @@ pipeline {
             }
             post{
                 always{
-                   recordIssues(tools: [trivy(pattern: 'trivy-results.json')])                }
+                   recordIssues(tools: [trivy(pattern: 'trivy-results.json')])
 
                 }
             }
