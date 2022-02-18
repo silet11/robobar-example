@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Security'){
             steps{
-                sh 'trivy fs .'
+                sh 'trivy fs --format json --output trivy-results.json .'
             }
 
         }
