@@ -5,6 +5,7 @@ pipeline {
     }
     stages {
         stage('Open') {
+            //when {expression {false} } para esquivar el codigo siguiente
             steps {
                 nodejs('node-14.18.2'){
                     sh 'yarn install'
