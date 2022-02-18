@@ -25,6 +25,12 @@ pipeline {
             }
 
         }
+        stage('Security'){
+            steps{
+                sh 'trivy fs .'
+            }
+
+        }
 
     }
 }
